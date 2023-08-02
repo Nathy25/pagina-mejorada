@@ -16,7 +16,7 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function() {
+$(document).ready(() => {
     $(".btn").click((evt) => {
         alert($(evt.target).html())
     })
