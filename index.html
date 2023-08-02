@@ -67,51 +67,56 @@
         </section>
 
     </main>
+
+
         <section id="comentarios">
-          <div id="com">
-            <article id="comentario_1">
-                <img src="img/avatt.png" alt="">
-                <p>Muy bueno el curso</p>
-            </article>
-
-            <article id="comentario_2">
-                <img src="img/avatt.png" alt="">
-                <p>Aprendi mucho!</p>
-
-            </article>
-
-            <article id="comentario_3">
-                <img src="img/avatt.png" alt="">
-                <p>Aguante html</p>
-
-            </article>
-          </div>
+        
         
 
             <div class="card">
               <span class="title">Escribe tu comentario</span>
-              <form class="form">
+              <form id="comentForm" class="form">
                 <div class="group">
                   <label for="name">Nombre:</label>
-                  <input placeholder="Nombre" type="text" required="">
+                  <input placeholder="Nombre" type="text" id="firsName" required="">
                   
                 </div>
                 <div class="group">
                   <label for="email">Email:</label>
-                  <input placeholder="Email" type="email" id="email" name="email" required="">
+                  <input placeholder="Email" type="email" name="email" id="email" required="">
                   
                 </div>
                 <div class="group">
                   <label for="comment">Comentario:</label>
-                  <textarea placeholder="Comentario" id="comment" name="comment" rows="5" required=""></textarea>
+                  <textarea placeholder="Comentario" name="comment" rows="5" id="coments" required=""></textarea>
                   
                  </div>
-                   <button type="submit">Enviar Comentario</button>
+                   <button type="submit" >Enviar Comentario</button>
              </form>
             </div>
-          
+
+
+            <div id="com">
+                <h2>Nuevos Comentarios</h2>
+                <article id="comentario_1">
+                    <ul id="coment"></ul>
+                </article>
+            </div>
+
+
+            <div class="noti">
+                <h3>Alerta de Noticias</h3>
+                <button class="btn">River Campeón</button>
+                <hr>
+                <button class="btn">Tini y Rodri se separaron</button>
+                <hr>
+                <button class="btn">Elecciones en Argentina</button>
+            </div>
+          <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+          <script src="script.js"></script>
 
         </section>
+
 
     <aside>
         <h4>Contrata Fibercorp</h4>
